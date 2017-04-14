@@ -1,5 +1,7 @@
-# Ma3Tycoon
+# Ma3Tycoon: a trivia game to crowdsource matatu routes in Kenya
 Ma3Tycoon is a prototype web app app aiming at updating Nairobi's complex and dynamic informal transit ("matatu") system, improving navigation and accessibility of the system. The goal of the project is to crowdsource updates by tapping into the expertise of riders, drivers, and others who use the system everyday. This prototype is developed at Crowdsourced City (Sprint 2016) course by three MIT graduate students in collaboration with ma3route, Kenya's go-to source for traffic and commuting information.
+
+*Videos and more information about the project: https://www.globalinnovationexchange.org/innovations/ma3tycoon-trivia-game-crowdsource-matatu-routes-kenya*
 
 # Prototype and Functions
 In this prototype, we have built the core function of the full concept - the route segments verification, including the development of the route question database, randomizing route segments, routes registration for users, storage of user inputs, and visualization of user’s responses. Modules include:

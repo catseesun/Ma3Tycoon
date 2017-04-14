@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>our travels</title>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <div class="intro-text">
+                        <span class="name">our travels</span>
+    </div>                    
+	<style>
+		#controls {
+	    	float: center;
+			position: relative;
+		}
+	</style>
+</header>
+<body>
+	<!-- Our web map and content will go here -->
+	<p></p>
+	<div id="map" style="width: 100%; height: 350px" align="middle"></div>
+	<div id="controls" style="margin: 15px;">
+		<button id="addButton">Show All Points</button>
+		<button id="removeButton">Hide All Points</button>
+		<button id="toggleButton">Toggle All Points</button>
+		<!-- <button id="filterSBux">Starbucks</button> -->
+		<!-- <button id="filterDD">Dunkin Donuts</button> -->
+	</div>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script>
+    	// Web map code goes here
+    	// var map = L.map('map',{ center: [42.362432, -71.086086], zoom: 14 }); 
+    	var map = L.map('map',{ center: [-1.292066, 36.821946], zoom: 13 });
+    	
+    	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+
+    	map.doubleClickZoom.disable();
+
+		var points = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"LineString","coordinates":[[36.8017425537,-1.25105142593,1699.65344238],[36.8017463684,-1.25105297565,1699.4407959],[36.8068122864,-1.27260124683,1695.5],[36.8070640564,-1.27260553837,1698.56555176],[36.8072814941,-1.27253735065,1699.65991211],[36.8164482117,-1.26234745979,1695.81774902],[36.8183746338,-1.25768375397,1692.73071289],[36.8081207275,-1.27071213722,1692.00183105],[36.7877082825,-1.29442322254,1758.20141602],[36.7810134888,-1.29758775234,1766.78308105],[36.7808418274,-1.29765212536,1767.14648438],[36.786819458,-1.29927432537,1767],[36.7826805115,-1.31506145,1752.32128906],[36.7782096863,-1.31193220615,1755.75817871],[36.7880401611,-1.2993285656,1763.59545898],[36.7808761597,-1.2977335453,1765.84936523],[36.7943382263,-1.28535246849,1771.20202637],[36.8134727478,-1.2873660326,1740.21044922],[36.8148918152,-1.2819133997,1717.61816406],[36.8147392273,-1.27112627029,1692.02563477],[36.8061904907,-1.25870704651,1692],[36.8047065735,-1.25821530819,1696.68444824],[36.8015174866,-1.25109291077,1692.45617676],[36.8027954102,-1.26410543919,1718.67041016],[36.801525116,-1.26888215542,1696.91418457],[36.7831954956,-1.29008150101,1723.57177734],[36.7808418274,-1.29773044586,1751.54858398],[36.780834198,-1.29767453671,1766.93994141],[36.781703949,-1.29284501076,1770.74060059],[36.792881012,-1.27730214596,1769.1262207],[36.8069953918,-1.27315676212,1722.69970703],[36.8203964233,-1.27736961842,1692],[36.825504303,-1.28231585026,1692],[36.8207435608,-1.28430438042,1690.64147949],[36.806427002,-1.27139568329,1692.00024414],[36.8009033203,-1.2734746933,1692],[36.7949333191,-1.27453231812,1729.12438965],[36.7808456421,-1.29772984982,1764.64196777],[36.8028793335,-1.26274347305,1738.89013672],[36.7957496643,-1.27537739277,1739.51257324],[36.7808761597,-1.29769873619,1753.67907715],[36.7808418274,-1.2976500988,1766.83581543],[36.7834243774,-1.29155027866,1770.69458008],[36.7851257324,-1.26001036167,1767.91796875],[36.7827606201,-1.28832316399,1767.00036621],[36.7811546326,-1.29791760445,1767],[36.7879562378,-1.29790651798,1772.20471191],[36.7831497192,-1.29862427711,1769.64746094],[36.7872314453,-1.29509341717,1770.96716309],[36.7843055725,-1.29855978489,1767],[36.7915458679,-1.29774880409,1768.17504883],[36.8243217468,-1.30060434341,1745.97802734],[36.9216308594,-1.3287229538,1688.87097168],[51.6116256714,25.2609806061,0],[51.5914459229,25.2823257446,16.2470417023],[-71.1079330444,42.3662605286,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11],[-71.102973938,42.373249054,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11],[-71.102645874,42.3711700439,11]]},"properties":{"name":"OpenPaths data for mhli","description":"Location history"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8017425537,-1.25105142593,1699.65344238]},"properties":{"datetime":"2016-03-21T10:48:32"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8017463684,-1.25105297565,1699.4407959]},"properties":{"datetime":"2016-03-21T10:52:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8068122864,-1.27260124683,1695.5]},"properties":{"datetime":"2016-03-21T12:54:24"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8070640564,-1.27260553837,1698.56555176]},"properties":{"datetime":"2016-03-21T14:34:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8072814941,-1.27253735065,1699.65991211]},"properties":{"datetime":"2016-03-21T15:17:20"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8164482117,-1.26234745979,1695.81774902]},"properties":{"datetime":"2016-03-21T16:06:24"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8183746338,-1.25768375397,1692.73071289]},"properties":{"datetime":"2016-03-21T16:25:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8081207275,-1.27071213722,1692.00183105]},"properties":{"datetime":"2016-03-21T19:05:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7877082825,-1.29442322254,1758.20141602]},"properties":{"datetime":"2016-03-21T19:22:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7810134888,-1.29758775234,1766.78308105]},"properties":{"datetime":"2016-03-21T20:41:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7808418274,-1.29765212536,1767.14648438]},"properties":{"datetime":"2016-03-22T03:24:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.786819458,-1.29927432537,1767]},"properties":{"datetime":"2016-03-22T05:39:12"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7826805115,-1.31506145,1752.32128906]},"properties":{"datetime":"2016-03-22T06:06:56"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7782096863,-1.31193220615,1755.75817871]},"properties":{"datetime":"2016-03-22T07:06:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7880401611,-1.2993285656,1763.59545898]},"properties":{"datetime":"2016-03-22T07:21:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7808761597,-1.2977335453,1765.84936523]},"properties":{"datetime":"2016-03-22T07:38:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7943382263,-1.28535246849,1771.20202637]},"properties":{"datetime":"2016-03-22T07:55:44"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8134727478,-1.2873660326,1740.21044922]},"properties":{"datetime":"2016-03-22T08:00:00"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8148918152,-1.2819133997,1717.61816406]},"properties":{"datetime":"2016-03-22T08:17:04"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8147392273,-1.27112627029,1692.02563477]},"properties":{"datetime":"2016-03-22T10:29:20"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8061904907,-1.25870704651,1692]},"properties":{"datetime":"2016-03-22T10:33:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8047065735,-1.25821530819,1696.68444824]},"properties":{"datetime":"2016-03-22T10:54:56"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8015174866,-1.25109291077,1692.45617676]},"properties":{"datetime":"2016-03-22T11:24:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8027954102,-1.26410543919,1718.67041016]},"properties":{"datetime":"2016-03-22T15:06:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.801525116,-1.26888215542,1696.91418457]},"properties":{"datetime":"2016-03-22T15:21:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7831954956,-1.29008150101,1723.57177734]},"properties":{"datetime":"2016-03-22T15:34:24"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7808418274,-1.29773044586,1751.54858398]},"properties":{"datetime":"2016-03-22T15:40:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.780834198,-1.29767453671,1766.93994141]},"properties":{"datetime":"2016-03-23T05:32:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.781703949,-1.29284501076,1770.74060059]},"properties":{"datetime":"2016-03-23T06:21:52"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.792881012,-1.27730214596,1769.1262207]},"properties":{"datetime":"2016-03-23T06:28:16"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8069953918,-1.27315676212,1722.69970703]},"properties":{"datetime":"2016-03-23T06:45:20"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8203964233,-1.27736961842,1692]},"properties":{"datetime":"2016-03-23T07:15:12"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.825504303,-1.28231585026,1692]},"properties":{"datetime":"2016-03-23T07:21:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8207435608,-1.28430438042,1690.64147949]},"properties":{"datetime":"2016-03-23T07:40:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.806427002,-1.27139568329,1692.00024414]},"properties":{"datetime":"2016-03-23T10:29:20"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8009033203,-1.2734746933,1692]},"properties":{"datetime":"2016-03-23T14:41:04"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7949333191,-1.27453231812,1729.12438965]},"properties":{"datetime":"2016-03-23T14:47:28"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7808456421,-1.29772984982,1764.64196777]},"properties":{"datetime":"2016-03-23T15:00:16"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8028793335,-1.26274347305,1738.89013672]},"properties":{"datetime":"2016-03-23T16:38:24"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7957496643,-1.27537739277,1739.51257324]},"properties":{"datetime":"2016-03-23T19:14:08"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7808761597,-1.29769873619,1753.67907715]},"properties":{"datetime":"2016-03-23T19:29:04"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7808418274,-1.2976500988,1766.83581543]},"properties":{"datetime":"2016-03-24T03:33:20"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7834243774,-1.29155027866,1770.69458008]},"properties":{"datetime":"2016-03-24T05:47:44"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7851257324,-1.26001036167,1767.91796875]},"properties":{"datetime":"2016-03-24T06:06:56"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7827606201,-1.28832316399,1767.00036621]},"properties":{"datetime":"2016-03-24T08:38:24"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7811546326,-1.29791760445,1767]},"properties":{"datetime":"2016-03-24T08:44:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7879562378,-1.29790651798,1772.20471191]},"properties":{"datetime":"2016-03-24T09:14:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7831497192,-1.29862427711,1769.64746094]},"properties":{"datetime":"2016-03-24T11:31:12"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7872314453,-1.29509341717,1770.96716309]},"properties":{"datetime":"2016-03-24T16:12:48"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7843055725,-1.29855978489,1767]},"properties":{"datetime":"2016-03-24T18:54:56"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.7915458679,-1.29774880409,1768.17504883]},"properties":{"datetime":"2016-03-24T19:05:36"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.8243217468,-1.30060434341,1745.97802734]},"properties":{"datetime":"2016-03-24T19:22:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[36.9216308594,-1.3287229538,1688.87097168]},"properties":{"datetime":"2016-03-24T19:48:16"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[51.6116256714,25.2609806061,0]},"properties":{"datetime":"2016-03-25T05:09:20"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[51.5914459229,25.2823257446,16.2470417023]},"properties":{"datetime":"2016-03-25T06:15:28"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.1079330444,42.3662605286,11]},"properties":{"datetime":"2016-03-25T23:04:32"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-26T08:46:56"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-26T13:02:56"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-26T16:51:12"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-27T02:37:52"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-27T04:37:20"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102973938,42.373249054,11]},"properties":{"datetime":"2016-03-27T10:50:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-27T12:24:32"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-27T14:21:52"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-27T16:42:40"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-27T22:43:12"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.102645874,42.3711700439,11]},"properties":{"datetime":"2016-03-27T23:30:08"}}]}
+
+		var travelPoints = null;
+
+		document.getElementById("addButton").addEventListener("click", addPoints);
+
+		function addPoints() {
+			travelPoints = L.geoJson(points, {
+				onEachFeature: function (feature, layer) {
+					layer.bindPopup(feature.properties.name);
+				}
+			}).addTo(map);
+		};
+
+		document.getElementById("removeButton").addEventListener("click", removePoints);
+
+		function removePoints() {
+		    map.removeLayer(travelPoints);
+		};
+
+		document.getElementById("toggleButton").addEventListener("click", togglePoints);
+
+		function togglePoints(){
+			if(map.hasLayer(travelPoints)){
+				removePoints();
+			} else {
+				addPoints();
+			}
+		};
+
+		document.getElementById("filterSBux").addEventListener("click", filterSBux);
+
+		function filterSBux(){
+			removePoints();
+		    travelPoints = L.geoJson(points,{
+				onEachFeature: function (feature, layer) {
+					layer.bindPopup(feature.properties.name);
+				}, filter: function (feature, layer) {
+					return feature.properties.name == "Starbucks";
+				}
+			}).addTo(map);
+		}
+
+		document.getElementById("filterDD").addEventListener("click", filterDD);
+
+		function filterDD(){
+			removePoints();
+		    travelPoints = L.geoJson(points,{
+				onEachFeature: function (feature, layer) {
+					layer.bindPopup(feature.properties.name);
+				}, filter: function (feature, layer) {
+					return feature.properties.name == "Dunkin Donuts";
+				}
+			}).addTo(map);
+		}
+	
+	</script>
+
+	<div class = "body"><p>In March of 2016, ma3tycoon team members Jintai and Menghan traveled to Nairobi, Kenya to meet with our client, ma3route, and other stakeholders including Kenya Bus Services and M-PESA. In addition, they conducted focus groups with students of the University of Nairobi and matatu drivers. Here is a map of their travels throughout the city!</p> </div>
+</body>
+</html>

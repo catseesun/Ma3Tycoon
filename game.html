@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="ma3tycoon:build your matatu empire by being the expert of the matatu network">
+		<meta name="author" content="emily long, menghan li, jintai li">
+		<!--css -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/freelancer.css" rel="stylesheet">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery v1.11.2 JS -->
+
+	    <script src="https://code.jquery.com/jquery-2.1.3.min.js" type="text/javascript"></script>
+
+		<!--fonts-->
+	    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+		<title>ma3tycoon</title>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+
+		<style>
+		section {
+			padding: 0;
+		}
+
+		#cover {position: fixed; height: 100%; width: 100%; top:0; left: 0; background: #2c3e50; z-index:9999;}
+		
+		#loading {
+			position: relative;
+			text-align:center;
+			font-size: 3em;
+			color: #999999;
+			padding: 3em;
+		}
+
+		#title {
+			float:center;
+			padding:1em;
+		}
+
+		#main {
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		/* #left {
+			float:left;
+			width:60%;
+			background-color: rgb(240,240,240);
+			visibility: visible;
+		}*/
+
+		#right {
+			/*float:right;
+			width: 29%;
+			font-size:1em;*/
+			height: 368px;
+			padding:1em;
+			margin:1em 1em;
+			background-color: #18bc9c;
+			visibility: visible;
+		}
+
+
+		#bottom {
+			float: left;
+			margin: 1em 0;
+			padding:1em;
+			position: relative;
+			width:100%;
+			visibility:visible;
+			color:white;
+			font-size: 1em;
+			background-color:#2c3e50;
+		}
+
+		#numQa {
+			font-size: 2em;
+			color: #CCCCCC;
+			padding-left:0.5em;
+		}
+
+		#mapscreen {
+			width:100%;
+			height: 400px;
+			border: 5px solid #24303E;
+			margin: 0 auto;
+			padding:2em;
+		}
+
+		#mapresult {
+			width:100%;
+			height: 400px;
+			border: 5px solid #24303E;
+			margin: 0 auto;
+			padding:2em;
+		}
+
+		.legend {
+			line-height: 18px;
+			color: #333333;
+			padding: 20px 20px;
+			background: white;
+			background: rgba(255,255,255,0.8);
+			box-shadow: 0 0 15px rgba(0,0,0,0.2);
+			border-radius: 5px;
+		}
+
+		.legend i {
+			width: 18px;
+			height: 18px;
+			float: left;
+			margin-right: 30px;
+			opacity: 0.7;
+		}
+
+		.legend img {
+			width: 18px;
+			height: 18px;
+			float: left;
+		}
+
+		.legend p {
+			font-size: 12px;
+			line-height: 18px;
+			margin-left: 50px;
+		}
+
+		#qa { 
+			position: relative;
+			float:center;
+			margin: 1em;
+			font-size: 2em;
+		}
+		#confirmFeedback { 
+			position: relative;
+			float:center;
+			margin: 1em;
+			font-size: 2em;
+		}
+
+		#qabut#confirmFeedback { 
+			position: relative;
+			float:center;
+			margin: 1em;
+			font-size: 2em;
+		}
+
+		#qabuttons a {
+		
+		}
+
+		#qabuttons button:hover {
+			color:white;
+			background-color: #367;
+			visibility: visible;
+		}
+
+		#route_input {
+			text-align:left;
+			margin: 0.5em;
+		}
+
+		#route1_input {
+			width: 200px;
+		}
+
+		#route2_input {
+			width: 200px;
+		}
+
+		#route3_input {
+			width: 200px;
+		}
+
+		#yesbutton {
+			position:relative;
+			left:0%;
+			top:0%;
+			width: 100%;
+			text-align: center;
+			visibility:visible; 
+			font-size: 2em;
+		}
+
+		#nobutton {
+			position:relative;
+			left:0%;
+			top:30px;
+			width: 100%;
+			text-align: center;
+			visibility:visible; 
+			font-size: 2em;
+		}
+
+		#skipbutton {
+			position:relative;
+			left:0%;
+			top:60px;
+			width: 100%;
+			text-align: center;
+			visibility:visible; 
+			font-size: 2em;
+		}
+
+		#loginbutton {
+			width: 35%;
+			text-align:center;
+			font-size:2em;
+			color: white;
+			background-color: #18bc9c;
+			border: 5px solid #2c3e50;
+			-moz-border-radius: 15px;
+  			-webkit-border-radius: 15px;
+			display: block;
+			padding: .25em;
+			margin: 0 auto;
+		}
+
+		#guestbutton {
+			width: 35%;
+			text-align:center;
+			font-size:2em;
+			color: white;
+			background-color: #CCCCCC;
+			border: 5px solid #999999;
+			-moz-border-radius: 15px;
+  			-webkit-border-radius: 15px;
+			display: block;
+			padding: .25em;
+			margin: 0 auto;
+		}
+
+		#startbutton {
+			font-size:3em;
+			color: white;
+			background-color: #18bc9c;
+			border: 5px solid #2c3e50;
+			-moz-border-radius: 15px;
+  			-webkit-border-radius: 15px;
+			display: block;
+			padding: .25em;
+			margin: 0 auto;
+		}
+
+		#restartbutton {
+			width: 40%;
+			font-size:2em;
+			color: white;
+			background-color: #18bc9c;
+			border: 5px solid #2c3e50;
+			-moz-border-radius: 15px;
+  			-webkit-border-radius: 15px;
+			display: block;
+			padding: .25em;
+			margin: 0 auto;
+		}
+
+		#reselectbutton {
+			width: 40%;
+			font-size:2em;
+			color: white;
+			background-color: #18bc9c;
+			border: 5px solid #2c3e50;
+			-moz-border-radius: 15px;
+  			-webkit-border-radius: 15px;
+			display: block;
+			padding: .25em;
+			margin: 0 auto;
+		}
+
+		#startbutton:hover {opacity: 0.6; 
+		}
+
+		#site-footer {
+			text-align: center;
+			background-color: #2c3e50;
+			color: white;
+		}
+
+		/*ul {
+			list-style-type: none;
+			display:inline-block;
+			overflow: hidden;
+			background-color: #2c3e50;
+			top:0;
+			width:100%;
+		}
+
+		nav li {
+			float: right;
+			padding:10px;
+		}
+
+		nav li a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 25px 16px;
+			font-size: 1.5em;
+			text-transform: uppercase;
+			font-family: Montserrat,"Helvetica Neue", Helvetica, Arial,sans-serif;
+			font-weight:700;
+			outline:0;
+			text-decoration: none;
+		}*/
+
+		#navbarcustom a:hover {
+			color: #18bc9c;
+		}
+
+		.ui-autocomplete {
+			max-height: 200px;
+			overflow-y: auto;
+			/* prevent horizontal scrollbar */
+			overflow-x: hidden;
+		}
+		/* IE 6 doesn't support max-height
+		* we use height instead, but this forces the menu to always be this tall
+		*/
+		* html .ui-autocomplete {
+			height: 200px;
+		}
+
+		.ui-menu {
+		    width: 200px;
+		    font-size:12px;
+		}
+
+		.ui-menu-item {
+		    height:20px;
+		    width: 200px;
+		    font-size:12px;
+		}
+
+		nav img {
+			width:60px; 
+			margin: 0em 1em;
+		}
+
+
+		</style>
+		
+		<link rel="shortcut icon"
+ 		href="img/logo.png"/>
+
+	<!-- google analytics -->
+	    <script>
+	      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	      ga('create', 'UA-77139070-1', 'auto');
+	      ga('send', 'pageview');
+
+	    </script>
+    
+	</head>
+	<body>
+		<div id="cover">
+			<p id="loading"><i>Please wait while the game is loading...</i></p>
+		</div>
+		<nav class="navbar navbar-inverse" style="background-color:#2c3e50">
+			<div class="container-fluid">
+				<div class="navbar-header">	
+					
+				<a class="nav-brand navbar-brand-logo" href="index.html">
+					<div class="logo">
+						<img src="img/icon.png">
+					</div>
+				</a>
+				</div>
+			<div id="navbarcustom">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="results.html">Results</a></li>
+						<li><a href="http://mit.co1.qualtrics.com/SE/?SID=SV_6xtLp3WVtbAlYvb" target="_newtab">Feedback </a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	<header>
+	</header>
+
+		<section>
+		<div id="title" align="center"> <h2> ma3tycoon
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ma3tycoon.webfactional.com/game.html" data-text="Come play MA3TYCOON and prove your knowledge of the matatu routes!" data-via="Ma3Tycoon" data-size="large">Tweet</a>
+ 
+		</h2></div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id ="login_cred">
+						<p><strong>Please log-in with your user name.</strong></p>
+						<p class="text-muted"><i>Your user name will only be used to track your responses in MA3TYCOON. If you have played this game before, please enter the user name you used before. If this is your first time playing the game, just create an arbitrary one! Alternatively you can also log-in as a guest.</i></p>
+			  			<label for="login_input">Username </label>
+			  			<input id="login_input" placeholder="e.g. MA3TYCOON"><br>
+			  			<p class="text-muted"><i>(User names are not case sensitive. Blank spaces will be deleted.)</i></p>
+			  	<div class="col-xs-6">
+			  			<button class="btn btn-block btn-info" onclick="login_fun();">LOG-IN</button>
+			  		</div>
+			  	<div class="col-xs-6">
+			  			<button class="btn btn-block btn-info" onclick="guest();">GUEST</button>
+			  		</div>
+			  	</div>
+			  		<div class="col-md-8">
+					<div id ="route_input">
+			  			<p><strong>Please select your routes</strong></p>
+			  			<label for="route1_input">Route </label>
+			  			<input id="route1_input" placeholder="e.g. 25">
+			  			<button id="random_route1" onclick="randomroute(1);">Random</button><br>
+			  			<!--<p><i>Please indicate your second most familiar route</i></p>-->
+			  			<label for="route2_input">Route </label>
+			  			<input id="route2_input" placeholder="e.g. 25">
+			  			<button id="random_route2" onclick="randomroute(2);">Random</button><br>
+					  	<!--<p><i>Please indicate your third most familiar route</i></p>-->
+			  			<label for="route3_input">Route </label>
+			  			<input id="route3_input" placeholder="e.g. 25">
+			  			<button id="random_route3" onclick="randomroute(3);">Random</button><br><br>
+					</div>
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text center">	
+				<button id="startbutton" onclick="checkStart();"><b>START GAME</b></button>
+					<div class="row">
+						<p id="numQa"></p>
+						<div class="col-md-8 col-sm-12">
+							<div id="mapscreen">
+							</div>
+							<div id="mapresult">
+							</div>
+							</div>
+							<div class="col-md-4 col-sm-12">
+							<div id="right">
+								<div id="qa">
+									<p id = "qatext"style="color:white;">Are the stops shown correct?</p>
+								</div>
+								<div id="qabuttons">
+									<p id="confirmFeedback">Your feedback has been submitted!</p>					
+									<button id="yesbutton" onclick="sendYes();">Yes</button>
+									<button id="nobutton" onclick="sendNo();">No</button>
+									<button id="skipbutton" onclick="sendSkip();">Skip</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<p id ="user_summary" style="color: #18bc9c"></p>
+					<button id="restartbutton" onclick="restartRound();">Play Another Round</button>
+					<button id="reselectbutton" onclick="location.reload();">Reselect Routes</button>
+				</div>
+</div>
+		<div class="container-fluid">
+			<div class="row">
+			<div id="bottom">
+			<h4>Help us improve matatu information!</h4>
+				<p>Several years ago, the <a href="http://www.digitalmatatus.com/"target="_newtab">digital matatus</a> team helped put Nairobi's complex and dynamic matatu system on a map, improving navigation and accessibility of the system. However, we have received feedback that some of the routes have changed since route data was last collected. In order for navigation data to be useful, it must be up-to-date and reliable.  The goal of the project is to crowdsource updates by tapping into the expertise of riders, driver, and others who use the system everyday. MA3TYCOON is a prototype app developed by three <a href="index.html#about" target="_newtab">MIT graduate students</a> in collaboration with <a href="http://www.ma3route.com/" target="_newtab">ma3route</a>, Kenya's go-to source for traffic and commuting information.</p>
+			</div>
+			</div>
+		</div>
+
+		</section>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="site-footer">
+					Copyright &copy; ma3tycoon 2016
+				</div>
+			</div>
+		</div>
+	</footer>
+
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> <!-- Leaflet v0.7.3 JS -->
+	    <script src="http://leaflet.github.io/Leaflet.draw/leaflet.draw.js"></script> <!-- Leaflet Draw JS -->
+
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js" type="text/javascript"></script>
+	  	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js" type="text/javascript"></script>
+	  	<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    	<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+ 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	  	<script src="js/game2.js" type="text/javascript"></script>
+
+		</body>
+</html>

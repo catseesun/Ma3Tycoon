@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+	<Document>
+		<name>OpenPaths data for mhli</name>
+		<open>1</open>
+		<description />
+		<Placemark>
+			<name>OpenPaths data for mhli</name>
+			<description>Location history</description>
+			<gx:Track>
+				<altitudeMode>clampToGround</altitudeMode>
+				<when>2016-03-21T10:48:32</when>
+				<gx:coord>36.8017425537 -1.25105142593 1699.65344238</gx:coord>
+				<when>2016-03-21T10:52:48</when>
+				<gx:coord>36.8017463684 -1.25105297565 1699.4407959</gx:coord>
+				<when>2016-03-21T12:54:24</when>
+				<gx:coord>36.8068122864 -1.27260124683 1695.5</gx:coord>
+				<when>2016-03-21T14:34:40</when>
+				<gx:coord>36.8070640564 -1.27260553837 1698.56555176</gx:coord>
+				<when>2016-03-21T15:17:20</when>
+				<gx:coord>36.8072814941 -1.27253735065 1699.65991211</gx:coord>
+				<when>2016-03-21T16:06:24</when>
+				<gx:coord>36.8164482117 -1.26234745979 1695.81774902</gx:coord>
+				<when>2016-03-21T16:25:36</when>
+				<gx:coord>36.8183746338 -1.25768375397 1692.73071289</gx:coord>
+				<when>2016-03-21T19:05:36</when>
+				<gx:coord>36.8081207275 -1.27071213722 1692.00183105</gx:coord>
+				<when>2016-03-21T19:22:40</when>
+				<gx:coord>36.7877082825 -1.29442322254 1758.20141602</gx:coord>
+				<when>2016-03-21T20:41:36</when>
+				<gx:coord>36.7810134888 -1.29758775234 1766.78308105</gx:coord>
+				<when>2016-03-22T03:24:48</when>
+				<gx:coord>36.7808418274 -1.29765212536 1767.14648438</gx:coord>
+				<when>2016-03-22T05:39:12</when>
+				<gx:coord>36.786819458 -1.29927432537 1767</gx:coord>
+				<when>2016-03-22T06:06:56</when>
+				<gx:coord>36.7826805115 -1.31506145 1752.32128906</gx:coord>
+				<when>2016-03-22T07:06:40</when>
+				<gx:coord>36.7782096863 -1.31193220615 1755.75817871</gx:coord>
+				<when>2016-03-22T07:21:36</when>
+				<gx:coord>36.7880401611 -1.2993285656 1763.59545898</gx:coord>
+				<when>2016-03-22T07:38:40</when>
+				<gx:coord>36.7808761597 -1.2977335453 1765.84936523</gx:coord>
+				<when>2016-03-22T07:55:44</when>
+				<gx:coord>36.7943382263 -1.28535246849 1771.20202637</gx:coord>
+				<when>2016-03-22T08:00:00</when>
+				<gx:coord>36.8134727478 -1.2873660326 1740.21044922</gx:coord>
+				<when>2016-03-22T08:17:04</when>
+				<gx:coord>36.8148918152 -1.2819133997 1717.61816406</gx:coord>
+				<when>2016-03-22T10:29:20</when>
+				<gx:coord>36.8147392273 -1.27112627029 1692.02563477</gx:coord>
+				<when>2016-03-22T10:33:36</when>
+				<gx:coord>36.8061904907 -1.25870704651 1692</gx:coord>
+				<when>2016-03-22T10:54:56</when>
+				<gx:coord>36.8047065735 -1.25821530819 1696.68444824</gx:coord>
+				<when>2016-03-22T11:24:48</when>
+				<gx:coord>36.8015174866 -1.25109291077 1692.45617676</gx:coord>
+				<when>2016-03-22T15:06:40</when>
+				<gx:coord>36.8027954102 -1.26410543919 1718.67041016</gx:coord>
+				<when>2016-03-22T15:21:36</when>
+				<gx:coord>36.801525116 -1.26888215542 1696.91418457</gx:coord>
+				<when>2016-03-22T15:34:24</when>
+				<gx:coord>36.7831954956 -1.29008150101 1723.57177734</gx:coord>
+				<when>2016-03-22T15:40:48</when>
+				<gx:coord>36.7808418274 -1.29773044586 1751.54858398</gx:coord>
+				<when>2016-03-23T05:32:48</when>
+				<gx:coord>36.780834198 -1.29767453671 1766.93994141</gx:coord>
+				<when>2016-03-23T06:21:52</when>
+				<gx:coord>36.781703949 -1.29284501076 1770.74060059</gx:coord>
+				<when>2016-03-23T06:28:16</when>
+				<gx:coord>36.792881012 -1.27730214596 1769.1262207</gx:coord>
+				<when>2016-03-23T06:45:20</when>
+				<gx:coord>36.8069953918 -1.27315676212 1722.69970703</gx:coord>
+				<when>2016-03-23T07:15:12</when>
+				<gx:coord>36.8203964233 -1.27736961842 1692</gx:coord>
+				<when>2016-03-23T07:21:36</when>
+				<gx:coord>36.825504303 -1.28231585026 1692</gx:coord>
+				<when>2016-03-23T07:40:48</when>
+				<gx:coord>36.8207435608 -1.28430438042 1690.64147949</gx:coord>
+				<when>2016-03-23T10:29:20</when>
+				<gx:coord>36.806427002 -1.27139568329 1692.00024414</gx:coord>
+				<when>2016-03-23T14:41:04</when>
+				<gx:coord>36.8009033203 -1.2734746933 1692</gx:coord>
+				<when>2016-03-23T14:47:28</when>
+				<gx:coord>36.7949333191 -1.27453231812 1729.12438965</gx:coord>
+				<when>2016-03-23T15:00:16</when>
+				<gx:coord>36.7808456421 -1.29772984982 1764.64196777</gx:coord>
+				<when>2016-03-23T16:38:24</when>
+				<gx:coord>36.8028793335 -1.26274347305 1738.89013672</gx:coord>
+				<when>2016-03-23T19:14:08</when>
+				<gx:coord>36.7957496643 -1.27537739277 1739.51257324</gx:coord>
+				<when>2016-03-23T19:29:04</when>
+				<gx:coord>36.7808761597 -1.29769873619 1753.67907715</gx:coord>
+				<when>2016-03-24T03:33:20</when>
+				<gx:coord>36.7808418274 -1.2976500988 1766.83581543</gx:coord>
+				<when>2016-03-24T05:47:44</when>
+				<gx:coord>36.7834243774 -1.29155027866 1770.69458008</gx:coord>
+				<when>2016-03-24T06:06:56</when>
+				<gx:coord>36.7851257324 -1.26001036167 1767.91796875</gx:coord>
+				<when>2016-03-24T08:38:24</when>
+				<gx:coord>36.7827606201 -1.28832316399 1767.00036621</gx:coord>
+				<when>2016-03-24T08:44:48</when>
+				<gx:coord>36.7811546326 -1.29791760445 1767</gx:coord>
+				<when>2016-03-24T09:14:40</when>
+				<gx:coord>36.7879562378 -1.29790651798 1772.20471191</gx:coord>
+				<when>2016-03-24T11:31:12</when>
+				<gx:coord>36.7831497192 -1.29862427711 1769.64746094</gx:coord>
+				<when>2016-03-24T16:12:48</when>
+				<gx:coord>36.7872314453 -1.29509341717 1770.96716309</gx:coord>
+				<when>2016-03-24T18:54:56</when>
+				<gx:coord>36.7843055725 -1.29855978489 1767</gx:coord>
+				<when>2016-03-24T19:05:36</when>
+				<gx:coord>36.7915458679 -1.29774880409 1768.17504883</gx:coord>
+				<when>2016-03-24T19:22:40</when>
+				<gx:coord>36.8243217468 -1.30060434341 1745.97802734</gx:coord>
+				<when>2016-03-24T19:48:16</when>
+				<gx:coord>36.9216308594 -1.3287229538 1688.87097168</gx:coord>
+				<when>2016-03-25T05:09:20</when>
+				<gx:coord>51.6116256714 25.2609806061 0</gx:coord>
+				<when>2016-03-25T06:15:28</when>
+				<gx:coord>51.5914459229 25.2823257446 16.2470417023</gx:coord>
+				<when>2016-03-25T23:04:32</when>
+				<gx:coord>-71.1079330444 42.3662605286 11</gx:coord>
+				<when>2016-03-26T08:46:56</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-26T13:02:56</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-26T16:51:12</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-27T02:37:52</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-27T04:37:20</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-27T10:50:40</when>
+				<gx:coord>-71.102973938 42.373249054 11</gx:coord>
+				<when>2016-03-27T12:24:32</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-27T14:21:52</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-27T16:42:40</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-27T22:43:12</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+				<when>2016-03-27T23:30:08</when>
+				<gx:coord>-71.102645874 42.3711700439 11</gx:coord>
+			</gx:Track>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T10:48:32</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8017425537,-1.25105142593,1699.65344238</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T10:52:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8017463684,-1.25105297565,1699.4407959</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T12:54:24</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8068122864,-1.27260124683,1695.5</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T14:34:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8070640564,-1.27260553837,1698.56555176</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T15:17:20</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8072814941,-1.27253735065,1699.65991211</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T16:06:24</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8164482117,-1.26234745979,1695.81774902</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T16:25:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8183746338,-1.25768375397,1692.73071289</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T19:05:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8081207275,-1.27071213722,1692.00183105</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T19:22:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7877082825,-1.29442322254,1758.20141602</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-21T20:41:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7810134888,-1.29758775234,1766.78308105</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T03:24:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7808418274,-1.29765212536,1767.14648438</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T05:39:12</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.786819458,-1.29927432537,1767</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T06:06:56</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7826805115,-1.31506145,1752.32128906</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T07:06:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7782096863,-1.31193220615,1755.75817871</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T07:21:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7880401611,-1.2993285656,1763.59545898</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T07:38:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7808761597,-1.2977335453,1765.84936523</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T07:55:44</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7943382263,-1.28535246849,1771.20202637</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T08:00:00</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8134727478,-1.2873660326,1740.21044922</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T08:17:04</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8148918152,-1.2819133997,1717.61816406</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T10:29:20</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8147392273,-1.27112627029,1692.02563477</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T10:33:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8061904907,-1.25870704651,1692</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T10:54:56</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8047065735,-1.25821530819,1696.68444824</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T11:24:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8015174866,-1.25109291077,1692.45617676</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T15:06:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8027954102,-1.26410543919,1718.67041016</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T15:21:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.801525116,-1.26888215542,1696.91418457</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T15:34:24</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7831954956,-1.29008150101,1723.57177734</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-22T15:40:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7808418274,-1.29773044586,1751.54858398</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T05:32:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.780834198,-1.29767453671,1766.93994141</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T06:21:52</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.781703949,-1.29284501076,1770.74060059</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T06:28:16</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.792881012,-1.27730214596,1769.1262207</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T06:45:20</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8069953918,-1.27315676212,1722.69970703</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T07:15:12</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8203964233,-1.27736961842,1692</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T07:21:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.825504303,-1.28231585026,1692</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T07:40:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8207435608,-1.28430438042,1690.64147949</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T10:29:20</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.806427002,-1.27139568329,1692.00024414</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T14:41:04</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8009033203,-1.2734746933,1692</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T14:47:28</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7949333191,-1.27453231812,1729.12438965</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T15:00:16</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7808456421,-1.29772984982,1764.64196777</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T16:38:24</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8028793335,-1.26274347305,1738.89013672</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T19:14:08</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7957496643,-1.27537739277,1739.51257324</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-23T19:29:04</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7808761597,-1.29769873619,1753.67907715</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T03:33:20</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7808418274,-1.2976500988,1766.83581543</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T05:47:44</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7834243774,-1.29155027866,1770.69458008</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T06:06:56</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7851257324,-1.26001036167,1767.91796875</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T08:38:24</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7827606201,-1.28832316399,1767.00036621</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T08:44:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7811546326,-1.29791760445,1767</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T09:14:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7879562378,-1.29790651798,1772.20471191</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T11:31:12</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7831497192,-1.29862427711,1769.64746094</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T16:12:48</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7872314453,-1.29509341717,1770.96716309</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T18:54:56</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7843055725,-1.29855978489,1767</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T19:05:36</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.7915458679,-1.29774880409,1768.17504883</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T19:22:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.8243217468,-1.30060434341,1745.97802734</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-24T19:48:16</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>36.9216308594,-1.3287229538,1688.87097168</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-25T05:09:20</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>51.6116256714,25.2609806061,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-25T06:15:28</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>51.5914459229,25.2823257446,16.2470417023</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-25T23:04:32</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.1079330444,42.3662605286,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-26T08:46:56</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-26T13:02:56</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-26T16:51:12</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T02:37:52</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T04:37:20</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T10:50:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102973938,42.373249054,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T12:24:32</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T14:21:52</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T16:42:40</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T22:43:12</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<ExtendedData>
+				<Data name="datetime">
+					<value>2016-03-27T23:30:08</value>
+				</Data>
+			</ExtendedData>
+			<Point>
+				<coordinates>-71.102645874,42.3711700439,11</coordinates>
+			</Point>
+		</Placemark>
+	</Document>
+</kml>
